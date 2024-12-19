@@ -13,4 +13,10 @@ app.get('/', (req, res) => {
   })
 });
 
+app.get('/posts', (req, res) => {
+  res.status(404).json({
+    arr: ['Post 1', 'post 2'],
+  })
+});
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
