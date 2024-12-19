@@ -8,7 +8,8 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.status(404).json({
     message: 'Сообщение',
-    arr: ['item 1', 'item 2']
+    arr: ['item 1', 'item 2'],
+    test: "Hello world"
   })
 });
 
